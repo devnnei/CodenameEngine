@@ -8,12 +8,15 @@ import flixel.animation.FlxAnimation;
 import flixel.util.FlxDirectionFlags;
 import flixel.math.FlxPoint;
 import flixel.math.FlxAngle;
-import flixel.FlxTypes;
+import flixel.util.FlxAxes;
 
 import haxe.xml.Access;
 
 using StringTools;
 using flixel.util.FlxColorTransformUtil;
+
+typedef ByteUInt = Int;
+typedef ByteInt = Int;
 
 @:structInit
 final class AlphabetOutline {
