@@ -113,7 +113,7 @@
 	<define name="DARK_MODE_WINDOW"/>
 
 	<!-- Disable a optimization, to allow reflection to use more functions -->
-	<define name="FLX_NO_GENERIC" />
+
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
