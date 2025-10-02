@@ -2,7 +2,7 @@ package funkin.editors.character;
 
 import flixel.text.FlxText.FlxTextFormat;
 import flixel.text.FlxText.FlxTextFormatMarkerPair;
-import flxanimate.FlxAnimate;
+import flxanimate.animate.FlxAnim.FlxSymbolAnimation;
 import flxanimate.animate.FlxSymbol;
 import flxanimate.animate.FlxElement;
 import flxanimate.animate.SymbolParameters;
@@ -232,7 +232,7 @@ class CharacterAnimButton extends UIButton {
 
 		var oldName:String = anim;
 		if (parent.character.animateAtlas != null) {
-			var animSymbol:Dynamic = __getAnimationSymbol();
+			var animSymbol:FlxSymbolAnimation = __getAnimationSymbol();
 
 			parent.character.animateAtlas.anim.animsMap.remove(anim);
 			parent.character.animateAtlas.anim.animsMap.set(newName, animSymbol);
@@ -331,7 +331,7 @@ class CharacterAnimButton extends UIButton {
 		animData.fps = newFPS;
 
 		if (parent.character.animateAtlas != null) {
-			var animSymbol:Dynamic = __getAnimationSymbol();
+			var animSymbol:FlxSymbolAnimation = __getAnimationSymbol();
 			animSymbol.frameRate = newFPS;
 		} else {
 			var flxAnimation:FlxAnimation = __getFlxAnimation();
@@ -352,7 +352,7 @@ class CharacterAnimButton extends UIButton {
 		animData.loop = newLooping;
 
 		if (parent.character.animateAtlas != null) {
-			var animSymbol:Dynamic = __getAnimationSymbol();
+			var animSymbol:FlxSymbolAnimation = __getAnimationSymbol();
 			animSymbol.instance.symbol.loop = animData.loop ? Loop : PlayOnce;
 		} else {
 			var flxAnimation:FlxAnimation = __getFlxAnimation();
@@ -429,7 +429,7 @@ class CharacterAnimButton extends UIButton {
 		}
 	}
 
-	public inline function refreshSymbolKeyFrames(symbol:Dynamic, animData:AnimData) @:privateAccess {
+	public inline function refreshSymbolKeyFrames(symbol:FlxSymbolAnimation, animData:AnimData) @:privateAccess {
 		var wasRefreshed:Bool = false;
 
 		try {
@@ -521,7 +521,7 @@ class CharacterAnimButton extends UIButton {
 		return parent.character.animation._animations[anim];
 	}
 
-	public inline function __getAnimationSymbol():Null<Dynamic> @:privateAccess {
+	public inline function __getAnimationSymbol():Null<FlxSymbolAnimation> @:privateAccess {
 		if (!parent.character.animateAtlas.anim.animsMap.exists(anim))
 			XMLUtil.addAnimToSprite(parent.character, data);
 		return parent.character.animateAtlas.anim.animsMap[anim];

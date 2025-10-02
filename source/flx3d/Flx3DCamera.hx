@@ -19,6 +19,7 @@ import away3d.loaders.parsers.*;
 import away3d.materials.TextureMaterial;
 import away3d.primitives.SkyBox;
 import away3d.utils.Cast;
+import away3d.utils.Utils.expect;
 import flixel.FlxG;
 import flx3d.Flx3DUtil;
 import haxe.io.Path;
@@ -97,11 +98,6 @@ class Flx3DCamera extends FlxCamera {
 
 	private var __cur3DStageID:Int;
 	private var _loaders:Map<Asset3DLibraryBundle, AssetLoaderToken> = [];
-
-	// Helper function to safely cast assets (replaces away3d.utils.Utils.expect)
-	private static inline function expect<T>(asset:Dynamic, type:Class<T>):T {
-		return cast asset;
-	}
 
 	private function loadData(data:Dynamic, context:AssetLoaderContext, parser:ParserBase, onAssetCallback:Asset3DEvent->Void):AssetLoaderToken {
 		var token:AssetLoaderToken;
