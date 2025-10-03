@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="xenofake" icon="xenofake" color="#23b6a6" x="-120" y="-180" camx="300" camy="380" holdTime="4.00000000000001">
+	<anim name="idle" anim="Xenofake Idle" x="-150" y="-340" fps="18" loop="true"/>
+	<anim name="singLEFT" anim="Xenofake Left" x="-174" y="-342"/>
+	<anim name="singDOWN" anim="Xenofake Down" x="-215" y="-422"/>
+	<anim name="singUP" anim="Xenofake Up" x="-196" y="-268"/>
+	<anim name="singRIGHT" anim="Xenofake Right" x="-274" y="-357"/>
+</character>

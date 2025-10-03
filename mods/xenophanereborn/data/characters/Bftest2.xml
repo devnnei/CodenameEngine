@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character y="350" sprite="BFtest2" flipX="true" camx="-70" camy="20" isPlayer="true" icon="newbf" color="#31FFFF">
+	<anim name="idle" anim="Idle" x="-103" y="6"/>
+	<anim name="singLEFT" anim="SingLeft" x="-21" y="-5"/>
+	<anim name="singDOWN" anim="SingDown" x="-59" y="-87"/>
+	<anim name="singUP" anim="SingUp" x="-145" y="73"/>
+	<anim name="singRIGHT" anim="SingRight" x="-140" y="-7"/>
+	<anim name="singLEFT-alt" anim="AltLeft" x="57" y="-6"/>
+	<anim name="singDOWN-alt" anim="AltDown" x="-6" y="-116"/>
+	<anim name="singUP-alt" anim="AltUp" x="-162" y="100"/>
+	<anim name="singRIGHT-alt" anim="AltRight" x="-122" y="-49"/>
+</character>

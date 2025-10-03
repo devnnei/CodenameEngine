@@ -1,0 +1,38 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/rundown/" name="xenofake" zoom="0.6">
+	<!-- xenofake -->
+	<sprite x="-400" scroll="0" sprite="sky" y="-200" scale="1.5" name="tree"/>
+	<sprite scrolly="0.2" x="-750" sprite="montains" y="-100" scale="1.5" scrollx="0.1" name="mountain"/>
+	<sprite scrolly="0.3" x="-800" sprite="water" y="-400" scale="1.5" scrollx="0.2" name="water"/>
+	<sprite x="-1260" sprite="ground" y="-600" scale="1.5" name="floor"/>
+
+	<!-- xenophaneisland -->
+	<sprite x="-400" scroll="0" sprite="sky2" y="-200" scale="1.5" name="tree2"/>
+	<sprite scrolly="0.2" x="-400" sprite="island" y="-300" scale="1.3" scrollx="0.1" name="mountain2"/>
+	<sprite x="-1260" sprite="ground2" y="-600" scale="1.5" name="floor2"/>
+
+	<!-- xenophaneforest -->
+	<sprite x="-400" scroll="0" sprite="sky3" y="-200" scale="1.5" name="sky3"/>
+	<sprite x="-800" scrolly="0.2" scrollx="0.1" sprite="forest1" y="-500" scale="1.5" name="forest1"/>
+	<sprite x="-800" scrolly="0.2" scrollx="0.1" sprite="forest2" y="-500" scale="1.5" name="forest2"/>
+	<sprite x="-800" scrolly="0.2" scrollx="0.1" sprite="forest3" y="-500" scale="1.5" name="forest3"/>
+	<sprite x="-800" scrolly="0.2" scrollx="0.1" sprite="forest3" y="-500" scale="1.5" name="forest4"/>
+	<sprite x="-1260" sprite="ground3" y="-600" scale="1.6" name="floor3"/>
+
+	<girlfriend x="-726.666666649732" y="-303.33333331734" camxoffset="-200" camyoffset="50"/>
+	<dad x="-1093.1711387194" y="-324.150466910406" camxoffset="-50"/>
+	<boyfriend x="-280.434755932564" y="-320.164499272178" camxoffset="120" camyoffset="-15"/>
+
+	<sprite y="0" x="0" name="light3" sprite="light3" scroll="0" antialiasing="true" alpha='0.7'>
+		<property name="zoomFactor" type="float" value="0"/>
+	</sprite>
+
+	<sprite y="0" x="0" name="light4" sprite="light4" scroll="0" antialiasing="true" alpha='0.7'>
+		<property name="zoomFactor" type="float" value="0"/>
+	</sprite>
+
+	<sprite x="-1260" sprite="death" y="-400" scale="1.2" name="death"/>	
+
+	<sprite scrolly="0.5" x="-800" sprite="rocks" y="-350" scale="1.3" scrollx="0.45" name="rocks"/>
+	<sprite x="-400" scroll="0.1" sprite="brush" y="-200" scale="1.5" name="brush"/>
+</stage>

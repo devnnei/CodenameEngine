@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="xenophanes" icon="xenophane" color="#af66ce" y="120" holdTime="6.1">
+	<anim name="Laugh" anim="laugh" x="141" y="43"/>
+	<anim name="idle" anim="angry idle" loop="true"/>
+	<anim name="singLEFT" anim="angry left" x="135" y="15"/>
+	<anim name="singDOWN" anim="angry down" x="-10" y="-80"/>
+	<anim name="singUP" anim="angry up" x="-36" y="220"/>
+	<anim name="singRIGHT" anim="angry right" x="-20" y="-14"/>
+</character>

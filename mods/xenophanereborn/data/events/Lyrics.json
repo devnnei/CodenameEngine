@@ -1,0 +1,19 @@
+{
+    "params": [
+        {
+            "name": "Lyrics Text",
+            "type": "String",
+            "defaultValue": "im feeling freaky"
+        },
+        {
+            "name": "mode",
+            "type": "String",
+            "defaultValue": "Text"
+        },
+	{
+            "name": "Y Offset",
+            "type": "Float(0, 9999, 0, 2)",
+            "defaultValue": "0"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"params": [
+		{
+			"name": "Strumline",
+			"type": "StrumLine",
+			"defaultValue": 0
+		},
+		{
+			"name": "SubChar",
+			"type": "Int(0)",
+			"defaultValue": "0"
+		},
+        {
+            "name": "Color",
+            "type": "ColorWheel",
+            "defaultValue": "#FF0800"
+        },
+		{
+			"name": "X offset",
+			"type": "Int(0, 9999999, 1)",
+			"defaultValue": "0"
+		},
+		{
+			"name": "Y offset",
+			"type": "Int(0, 9999999, 1)",
+			"defaultValue": "0"
+		}
+	]
+}
